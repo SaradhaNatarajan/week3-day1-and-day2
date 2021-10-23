@@ -1,16 +1,14 @@
-package Week3day1;
+package Week3day2;
 
-public class Desktop extends Computer {
-	public void desktopSize() {
-		System.out.println("desktop size");
-			}
-	public static void main(String[] args) {
-		Computer obj = new Computer();
-		Desktop desk = new Desktop();
-		obj.computerModel();
-		desk.desktopSize();
-	
-	
+public class Desktop implements HardWare,Software {
+
+	public void softwareResources() {
+		System.out.println("Software Resources Windows -11");		
 	}
+
+	public void hardwareResources() {
+		System.out.println("Hardware Resources i7 processor");
+	}
+		
 
 }
